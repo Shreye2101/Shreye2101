@@ -1,0 +1,375 @@
+@font-face {
+    font-family: "Attila Sans Uniform Basic Semibold";
+    src: url(./attila.ttf);
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    /* color: #d1d1d1; */
+    color:  rgb(213, 205, 196);
+    /* font-family: "Arial"; */
+    font-family: "Attila Sans Uniform Basic Semibold";
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+body{
+    background-color: #222;
+    overflow-x: hidden;
+}
+
+#main{
+    /* width: 100%; */
+    /* height: 100%; */
+    background-color: #222;
+}
+
+#full-scr-nav{
+    /* display: none; */
+    height: 100vh;
+    width: 100vw;
+    background-color: bisque;
+    color: #222;
+    position: absolute;
+    /* display: flex; */
+    top: -100%;
+    transition: all ease 0.6;
+    padding: 200px 150px;
+}
+
+#full-scr-nav h1{
+    font-size: 200px;
+    color: #222;
+    /* font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    letter-spacing: -10px;
+    /* font-weight: 300; */   
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+    background-color: #222;
+    padding: 0 65px;
+    position: absolute;
+    /* z-index: 99; */
+}
+
+#nav h2{
+    font-size: 15px;
+    letter-spacing: 6px;
+    font-weight: 600;
+}
+
+#nav h3{
+    font-size: 15px;
+    letter-spacing: 0px;
+    font-weight: 600;
+}
+
+#nav_part2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav_part2 i{
+    margin-left: 50px;
+    cursor: pointer;
+
+}
+
+#page1{
+    color: green;
+    min-height: 90vh;
+    width: 100vw;
+    position: relative;
+}
+
+#page1 h1{
+    left: 7%;
+    position: absolute;
+    font-size: 13vw;
+    top: 21%;
+    letter-spacing: 18px;
+}
+
+#page1 h2{
+    left: 30%;
+    position: absolute;
+    font-size: 2.8vw;
+    top: 58%;
+    width: 25%;
+    line-height: 2.5vw;
+}
+
+#page1 h3{
+    left: 74%;
+    position: absolute;
+    font-size: 1vw;
+    top: 58%;
+    width: 20%;
+    font-weight: 300;
+    line-height: 2.5vw;
+    text-transform: uppercase;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#page2 img{
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0)scale(0.9);
+}
+
+#page2{
+    position: relative;
+    min-height: 120vh;
+    padding-bottom: 10vh;
+    /* min-height: 90vh;
+    transform: translate(-50%,-50%); */
+}
+
+#page2 h1{
+    font-size: 45px;
+    /* top: 50%;
+    left: 50%; */
+    width: 65%;
+    /* opacity: 0; */
+    margin-top: 25vh;
+    /* transform-origin: 100% 100%; */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /* transform: rotateX(270deg); */
+    
+}
+
+#page2 h1 span{
+    font-family: "Noteworthy Light";
+    font-size: 4vw;
+    opacity: 0.5;
+}
+
+#page3{
+    height: 100vh;
+    width:100vw;
+    position: relative;
+}
+
+#page4{
+    height:80vh;
+    width:100%;
+    position: relative;
+    padding: 60px 150px;
+    padding-top: 28vh;
+    padding-left: 73px ;
+}
+
+#page4 h1{
+    line-height: 90px;
+    font-size: 8vw;
+    /* position: absolute; */
+}
+
+#page5{
+    height: 130vh;
+    width: 100vw;
+    position: relative;
+    /* background-color: #fff; */
+}
+
+#page5-elems{
+    color: black;
+    height:22%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: absolute; */
+
+}
+
+#page5-elems h1{
+    height: 100%;
+    width: 68%;
+    /* padding: 50px 80px; */
+    font-size: 50px;
+    padding: 45px 80px;
+    border: 1px solid #dadada;
+    /* border-bottom: 2px solid #dadada;*/
+} 
+
+#page5-elems h2{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    font-weight: 400;
+    width: 32%;
+    padding: 40px 40px;
+    font-size: 25px;
+    line-height: 28px;
+    border-bottom: 1px solid #dadada;
+    border-top: 1px solid #dadada;
+}
+
+#page5-content{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-image: url(https://assets-global.website-files.com/61defec4a021d8fe954c11bd/61defec4a021d83ede4c11f8_stars.gif);
+    justify-content:flex-start;
+    background-position: cover;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+#page5-content h1{
+    font-weight: 400;
+    margin-top: 150px;
+    margin-bottom: 30px;
+    font-size: 4.5vw;
+    text-align: center;
+    line-height: 4.4vw;
+    width: 65%;
+}
+
+#page5-content h1 span{
+    font-size: 4vw;
+    font-family: "Noteworthy Light";
+    opacity:0.8;
+    font-weight: 300;
+}
+
+#page5-content h4{
+    font-size: 1.2vw;
+    line-height: 1.2vw;
+    width: 28%;
+    margin-top: 2vw;
+    margin-bottom: 5vw;
+}
+
+#page6 .slide1-of-h1{
+    overflow-x: auto;
+    overflow-y: hidden;
+    cursor: default;
+}
+
+#page6 h1{
+    line-height: 22vh;
+    font-size: 13vw;
+    text-transform: uppercase;
+}
+
+#page6 h1 .one2{
+    color: transparent;
+    -webkit-text-stroke: 1px #adadad;
+}
+#page6 .slide2-of-h1{
+    overflow-x: auto;
+    overflow-y: hidden;
+    cursor: default;
+}
+
+#page6 .slide1-of-h1::-webkit-scrollbar{
+    display: none;
+}
+
+#page6 .slide2-of-h1::-webkit-scrollbar{
+    display: none;
+}
+
+#page6 .slide2-of-h1 h1{
+    transform: translateX(-100%);
+}
+
+
+
+#page7{
+    height: 100vh;
+    width: 100vw;
+    padding: 100px 50px;
+    background-color: #222;
+}
+
+#page7 h3{
+    transform: translate(-50%);
+    font-size: 2.9vw;
+    position: relative;
+    left: 50%;
+    width: 45%;
+    text-align: center;
+}
+
+#page7 h3 span{
+    font-family: "Noteworthy Light";
+    opacity: 0.5;
+    font-size: 3.5vw;
+    line-height: 1.2vh;
+    font-weight: 400;
+}
+
+#page7-elems{
+    position: relative;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 20%;
+    font-size: 2vw;
+
+}
+
+#page7-elems #elem1{
+    height: 90%;
+    width: 30%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    /* position: relative; */
+    
+}
+
+#page7-elems #elem1 h1{
+    z-index: 99;
+    position: relative;
+
+}
+
+#page7-elems #elem2 h1{
+    z-index: 99;
+
+}
+
+#page7-elems #elem2{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+#page7-elems #elem1 img{
+    position: absolute;
+    opacity: 0;
+    transition: opacity ease-in 0.2s;
+    transform: rotate(16deg);
+  
+
+}
+
+#page7-elems #elem2 img{
+    position: absolute;
+    opacity: 0;
+
+}
